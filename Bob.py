@@ -1,18 +1,15 @@
 def find_bob_occurrences(text):
     count = 0
 
-
     for i in range(len(text)):
         if text[i] == 'b' and i + 2 < len(text):
-            if text[i + 1:i + 4] == 'Bob':
+            if text[i + 1:i + 3] == 'ob':
                 count += 1
 
     return count
 
-
 text = "Bob bobob went to the bobstore with Bobs"
 print("Number of occurrences:", find_bob_occurrences(text))
-
 
 #my explanation:
 
